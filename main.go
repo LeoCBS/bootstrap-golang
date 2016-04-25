@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-    fmt.Printf("starting bootstrap golang")
+    fmt.Printf("starting bootstrap golang with success")
 }
