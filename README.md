@@ -1,18 +1,7 @@
-# Bootstrap golang
+# Golang practice project
 
-initialize one golang project with docker
+Some golang examples
 
-## HOW WORKS
+## Examples
 
-Just fork the project and add source files
-
-Golang main file is `main.go`
-
-#### RUN
-
-    make run
-
-
-#### TODOs
-
-* Add godeps
+    make run-pointers
