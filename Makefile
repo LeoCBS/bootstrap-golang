@@ -12,4 +12,4 @@ run: build
 	./main
 
 run-pointers: base-build
-	$(RUN_GO) go run pointers/pointers.go	
+	$(RUN_GO) go test pointers/pointers.go	

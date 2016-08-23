@@ -2,16 +2,14 @@ package main
 
 import "fmt"
 
-func numberValue(value string) {
-	fmt.Println("value:", value)
+func sumValue(value int) int {
+	return value + 100
 }
 
 func numberPointer(value *string) {
 	fmt.Println("pointer:", value)
 }
 
-func main() {
-	numberValue("go-scratchpad")
-	testString := "go-scratchpad"
-	numberPointer(&testString)
+func loadvalueFromPointer(value *string) {
+	fmt.Println("value from point: %s", value)
 }
