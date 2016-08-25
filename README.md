@@ -4,7 +4,7 @@ Some golang examples
 
 ## Examples
 
-    make run-pointers
+    make check
 
 ## wishlist
 
