@@ -1,10 +1,16 @@
-package main_test
+package pointers_test
 
 import (
-	"main"
 	"testing"
+    "fmt"
+
+    "github.com/leocbs/go-scratchpad/pointers"
 )
 
 func TestSumWithoutPointer(t *testing.T) {
-	main.sumValue(100)
+    value := pointers.SumValue(100)
+    fmt.Printf("value " , value)
+    if value == 1000{
+        t.Fatal("Pointer don't work")
+    }
 }

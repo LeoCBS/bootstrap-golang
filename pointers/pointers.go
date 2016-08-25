@@ -1,8 +1,8 @@
-package main
+package pointers
 
 import "fmt"
 
-func sumValue(value int) int {
+func SumValue(value int) int {
 	return value + 100
 }
 

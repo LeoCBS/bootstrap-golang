@@ -1,5 +1,5 @@
 BASE_BUILD_IMG = go-scratchpad
-GO_DIR=/go/src/github.com/leocbs/main
+GO_DIR=/go/src/github.com/leocbs/go-scratchpad
 RUN_GO=docker run -v `pwd`:$(GO_DIR) -w $(GO_DIR) $(BASE_BUILD_IMG) 
 
 base-build:
@@ -11,5 +11,5 @@ build: base-build
 run: build
 	./main
 
-run-pointers: base-build
-	$(RUN_GO) go test pointers/pointers.go	
+check: base-build
+	$(RUN_GO) go test -v ./...	
