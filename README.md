@@ -4,8 +4,14 @@ Some golang examples
 
 ## Examples
 
+* [Pointer](pointers/README.md)
+
+
+## how to run examples
+
     make check
 
 ## wishlist
 
-* Using Pointer Receiver Methods On Value Instances
+* nil behavior
+* slice, map

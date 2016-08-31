@@ -1,15 +1,33 @@
 package pointers
 
-import "fmt"
-
-func SumValue(value int) int {
-	return value + 100
+type Calculator struct{
+	Memory int
 }
 
-func numberPointer(value *string) {
-	fmt.Println("pointer:", value)
+func (calculator *Calculator) Sum(value int) {
+	calculator.Memory = calculator.Memory + 100
 }
 
-func loadvalueFromPointer(value *string) {
-	fmt.Println("value from point: %s", value)
+func (calculator *Calculator) GetMemory() int {
+	return calculator.Memory
+}
+
+func NewCalculatorPointer(initValue int) *Calculator{
+	return &Calculator{
+		Memory:initValue,
+	}
+}
+
+func NewCalculatorValue(initValue int) Calculator{
+	return Calculator{
+		Memory:initValue,
+	}
+}
+
+func (calculator Calculator) SumNoPointer(value int) {
+	calculator.Memory = calculator.Memory + 100
+}
+
+func (calculator Calculator) GetMemoryNoPointer() int {
+	return calculator.Memory
 }
