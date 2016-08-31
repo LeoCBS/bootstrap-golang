@@ -15,3 +15,4 @@ Some golang examples
 
 * nil behavior
 * slice, map
+* test table v2
