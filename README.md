@@ -14,5 +14,6 @@ Some golang examples
 ## wishlist
 
 * nil behavior
+ - zero value in struct and pointer
 * slice, map
 * test table v2
