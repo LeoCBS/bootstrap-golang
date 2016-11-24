@@ -7,12 +7,12 @@ type Calculator struct {
 }
 
 func (calculator *Calculator) Sum(value int) {
-	fmt.Println("calculator pointer: %s", &calculator.Memory)
+	fmt.Println("memory pointer: %s", &calculator.Memory)
 	calculator.Memory = calculator.Memory + 100
 }
 
 func (calculator *Calculator) GetMemory() int {
-	fmt.Println("calculator pointer: %s", &calculator.Memory)
+	fmt.Println("memory pointer: %s", &calculator.Memory)
 	return calculator.Memory
 }
 
@@ -29,11 +29,11 @@ func NewCalculatorValue(initValue int) Calculator {
 }
 
 func (calculator Calculator) SumNoPointer(value int) {
-	fmt.Println("calculator pointer: %s", &calculator.Memory)
+	fmt.Println("memory pointer: %s", &calculator.Memory)
 	calculator.Memory = calculator.Memory + 100
 }
 
 func (calculator Calculator) GetMemoryNoPointer() int {
-	fmt.Println("calculator pointer: %s", &calculator.Memory)
+	fmt.Println("memory pointer: %s", &calculator.Memory)
 	return calculator.Memory
 }
