@@ -95,6 +95,20 @@ func (calculator Calculator) GetMemoryNoPointer() int {
 value %!(EXTRA int=100)--- PASS: TestSumPerValue (0.00s)
  ```
 
+ all test output printing memory pointer value
+
+```
+=== RUN   TestSumPointer
+calculator pointer: %s 0xc8200124b8
+calculator pointer: %s 0xc8200124b8
+value %!(EXTRA int=200)--- PASS: TestSumPointer (0.00s)
+=== RUN   TestSumPerValue
+calculator pointer: %s 0xc820012558
+calculator pointer: %s 0xc8200125b0
+value %!(EXTRA int=100)--- PASS: TestSumPerValue (0.00s)
+```
+
+
  To run this test, just clone and `make run`
 
  Now that we already know pointer behavior, read this [this](http://stackoverflow.com/questions/23542989/pointers-vs-values-in-parameters-and-return-values) question in stack over flow to learn when user pointer or value
