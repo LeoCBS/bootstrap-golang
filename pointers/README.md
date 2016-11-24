@@ -99,12 +99,12 @@ value %!(EXTRA int=100)--- PASS: TestSumPerValue (0.00s)
 
 ```
 === RUN   TestSumPointer
-calculator pointer: %s 0xc8200124b8
-calculator pointer: %s 0xc8200124b8
+memory pointer: %s 0xc8200124b8
+memory pointer: %s 0xc8200124b8
 value %!(EXTRA int=200)--- PASS: TestSumPointer (0.00s)
 === RUN   TestSumPerValue
-calculator pointer: %s 0xc820012558
-calculator pointer: %s 0xc8200125b0
+memory pointer: %s 0xc820012558
+memory pointer: %s 0xc8200125b0
 value %!(EXTRA int=100)--- PASS: TestSumPerValue (0.00s)
 ```
 
